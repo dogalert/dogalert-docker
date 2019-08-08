@@ -1,0 +1,4 @@
+#!/bin/bash
+docker stack rm dogalert
+sleep 10
+docker stack deploy -c docker-compose.yml dogalert
